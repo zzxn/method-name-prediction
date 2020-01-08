@@ -1,5 +1,5 @@
 {
-  "run_name": "elasticsearch_with_no_tests",
+  "run_name": "mymodel",
   "model_type": "cnn_attention",
   "model_hyperparameters": {
     "epochs": 50,

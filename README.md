@@ -1,3 +1,13 @@
+# 如何运行 (by ZXN)
+
+1. 按照下方`Method Name Prediction > Setup > Prerequisites`中的指示配置好环境，另需安装`matplotlib`
+2. cd到`method-name-prediction`目录
+3. 把所有`.java`文件放置到`data/raw`目录下，**这些代码文件可以在任意层嵌套的目录中**
+4. 运行`python src/preprocess.py data/raw data/processed`，把`.java`文件处理成`.proto`文件，在处理完成后可以在`data/processed`
+目录下看到处理好的同等数量的`.proto`文件（如无法编译，则不会输出）
+5. 配置`configs/example-config.json`，指定超参数
+6. 运行`python src/run_model.py data/processed --hyperparameters-config=configs/example-config.json`，训练模型
+
 # Method Name Prediction
 This repository contains the Keras Implementation of [A convolutional attention network for extreme summarization of source code](https://arxiv.org/abs/1602.03001) [1]
 
