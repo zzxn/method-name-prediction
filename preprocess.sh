@@ -1,0 +1,1 @@
+python3 ./src/preprocess.py ./data/raw data/processed

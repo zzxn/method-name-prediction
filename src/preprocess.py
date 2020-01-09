@@ -7,7 +7,6 @@ import os
 import platform
 import multiprocessing
 import time
-import tqdm
 
 compile_cmd = ''
 move_cmd = ''

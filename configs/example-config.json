@@ -22,6 +22,6 @@
     "max_chunk_length": 50,
     "vocabulary_count_threshold": 3,
     "min_line_of_codes": 3,
-    "skip_tests": true
+    "skip_tests": false
   }
 }
